@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1250px;
+    height: 80px;
+    margin-top: 18px;
+    margin-bottom: -15px;
+}
+.header img{
+    margin-left: 25px;
+}
+.fa-bars::before{
+    content:url("https://snoot.in/wp-content/uploads/2022/08/icon-ham.png");
+    float: right;
+}
+.page1,.page2,.page3,.page4,.page5,.page6,.page7{
+    float: center;
+    margin-left:-30px;
+}
+.page1{
+    width: 1160px;
+    height: 450px;
+    background-color: rgb(199, 195, 195);
+    border-radius: 40px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.page12,.page22,.page32,.page42,.page52,.page62,.page72{
+    padding: 100px;
+    
+}
+.page2{
+    width: 1160px;
+    height: 450px;
+    background-color: pink;
+    background: url("https://www.shutterstock.com/image-photo/banner-two-smiling-dogs-happy-260nw-1847221756.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.page3{
+    width: 1160px;
+    height: 450px;
+    background-color: rgb(238, 235, 235);
+    background: url("https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.page4{
+    width: 1160px;
+    height: 450px;
+    background-color: rgb(146, 142, 142);
+    background: url("https://media.istockphoto.com/id/1278558854/photo/portrait-of-a-blond-labrador-retriever-dog-looking-around-the-corner-of-an-yellow-empty-board.jpg?s=612x612&w=0&k=20&c=egmEDGpOl4zxfz6VZARi2D9hSaG2DJvKph3ic8idaxs=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.page5{
+    width: 1160px;
+    height: 450px;
+    background-color: white;
+    background: url("https://img.freepik.com/free-photo/front-view-beautiful-dog-with-copy-space_23-2148786561.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.page6{
+    width: 1160px;
+    height: 450px;
+    background-color: rgb(243, 171, 62);
+    background: url("https://media.istockphoto.com/id/1310068143/video/lovely-small-golden-retriever-dog-reacting-to-noise-suspiciously-looking-around-while-sitting.jpg?s=640x640&k=20&c=eAtC2LF_b5qHhRR1jo0jfbwsPPUGjnKUY2ZI1D60ZUw=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.page7{
+    width: 1160px;
+    height: 450px;
+    background-color: rgb(240, 205, 11);
+    background: url("https://images.pond5.com/dog-running-slow-motion-footage-086451703_iconl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    text-align: left;
+}
+.social{
+  width: 250px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+  margin-left: 40%;
+  text-align: center;
+  
+}
