@@ -555,15 +555,16 @@
                 margin-top: -50px;
             }
          }
-        @media screen and (max-width:1170px){
+        @media screen and (min-width:1170px){
             body{
-                max-width:1169px;
+                min-width:1170px;
+                overflow-x:hidden;
             }
             body::-webkit-scrollbar{
                 display: none;
             }
             .front1 img{
-                width:3000px;
+                width:1500px;
                 height: 450px;
                 margin-left: -253px;
                 position: absolute;
