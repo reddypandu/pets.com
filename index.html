@@ -9,11 +9,11 @@
     <title>Snoot.com</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" style="overflow: auto;">
         <img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px">
         <i class="fa fa-bars"></i>
       </div>
-    <center><section class="container1">
+    <center><section class="container1" style="overflow: hidden;">
         <div id="card1" class="card1">
             <figure class="front1">
                 <img src="https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg" width="1000px" height="450px">
@@ -33,7 +33,7 @@
         <button id="flip1">About us</button>
         </p>
     </section>
-    <section class="container2">
+    <section class="container2" style="overflow: auto;">
         <div id="card2" class="card2">
             <figure class="front2">
                 <img src="https://www.shutterstock.com/image-photo/banner-two-smiling-dogs-happy-260nw-1847221756.jpg" width="1000px" height="450px">
@@ -45,14 +45,16 @@
             </figure>
         </div>
     </section>
+    <div class="social" style="overflow: auto;">
     <a href="https://api.whatsapp.com/send?phone=918008457750" class="my-float" target="blank"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316__340.png" class="float"></a>
     <a href="tel:918008457750"><img src="https://img.freepik.com/free-icon/phone_318-452619.jpg" class="call"></a>
+    </div>
         <section id="option2">
             <p>
             <button id="flip2" class="flip2">Contact</button>
             </p>
         </section>
-        <section class="container3">
+        <section class="container3" style="overflow: auto;">
             <div class="card3" id="card3">
                 <figure class="front3">
                     <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" width="1000px" height="450px">
@@ -71,7 +73,7 @@
             <button id="flip3" class="flip3">Services</button>
             </p>
         </section>
-        <section class="container4">
+        <section class="container4" style="overflow: auto;">
             <div class="card4" id="card4">
                 <figure class="front4">
                     <img src="https://media.istockphoto.com/id/1278558854/photo/portrait-of-a-blond-labrador-retriever-dog-looking-around-the-corner-of-an-yellow-empty-board.jpg?s=612x612&w=0&k=20&c=egmEDGpOl4zxfz6VZARi2D9hSaG2DJvKph3ic8idaxs=" width="1000px" height="450px">
@@ -90,7 +92,7 @@
             <button id="flip4" class="flip4">Services</button>
             </p>
         </section>
-        <section class="container5">
+        <section class="container5" style="overflow: auto;">
             <div class="card5" id="card5">
                 <figure class="front5">
                     <img src="https://img.freepik.com/free-photo/front-view-beautiful-dog-with-copy-space_23-2148786561.jpg" width="1000px" height="450px">
@@ -109,7 +111,7 @@
             <button id="flip5" class="flip5">Services</button>
             </p>
         </section>
-        <section class="container6">
+        <section class="container6" style="overflow: hidden;">
             <div class="card6" id="card6">
                 <figure class="front6">
                     <img src="https://media.istockphoto.com/id/1310068143/video/lovely-small-golden-retriever-dog-reacting-to-noise-suspiciously-looking-around-while-sitting.jpg?s=640x640&k=20&c=eAtC2LF_b5qHhRR1jo0jfbwsPPUGjnKUY2ZI1D60ZUw=" width="1000px" height="450px">
@@ -129,7 +131,7 @@
             <button id="flip6" class="flip6">Services</button>
             </p>
         </section>
-        <section class="container7">
+        <section class="container7" style="overflow: auto;">
             <div class="card7" id="card7">
                 <figure class="front7">
                     <img src="https://images.pond5.com/dog-running-slow-motion-footage-086451703_iconl.jpeg" width="1000px" height="450px">
@@ -149,14 +151,15 @@
             <p>
             <button id="flip7" class="flip7">Services</button>
             </p>
-        </section></center>
+        </section>
+    </center>
     <style>
         .float{
             position: fixed;
             width: 60px;
             height:60px;
             bottom:40px;
-            right:60px;
+            right:230px;
             color:#FFF;
             border-radius:20px;
             text-align:center;
@@ -169,7 +172,7 @@
             width: 60px;
             height:60px;
             bottom:40px;
-            right:140px;
+            right:300px;
             color:#FFF;
             border-radius:20px;
             text-align:center;
@@ -179,7 +182,7 @@
         }
         .front1 img,.front2 img,.front3 img,.front4 img,.front5 img,.front6 img,.front7 img{
            position: absolute;
-           margin-left: -542px;
+           margin-left: -543px;
            border-radius: 30px;
            border-style: solid;
            border-color:rgb(230, 63, 63);
@@ -213,11 +216,11 @@
             position: relative;
             font-size: 20px;
         }
-        #option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
+        /*#option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
             position: absolute;
             margin-top: -450px;
             margin-left: 412px;
-        }
+        }*/
         .container1,.container2,.container3,.container4,.container5,.container6,.container7{
             width: 1000px;
             height: 450px;
@@ -253,7 +256,41 @@
          #card1.flipped1,#card2.flipped2,#card3.flipped3,#card4.flipped4,#card5.flipped5,#card6.flipped6,#card7.flipped7{
             transform: rotateY(-180deg);
          }
-         @media screen and (min-width:360px){
+         @media only screen and (max-width: 400px){
+            .container1,.container2,.container3,.container4,.container5,.container6,.container7{
+                width:90%;
+                margin:0;
+                padding: 0;
+            }
+            body{
+                width:400px;
+                padding:0;
+                overflow-x: hidden;
+            }
+            #option1,#option2,#option3,#option4,#option5,#option6,#option7{
+                width:100%;
+                margin:0;
+                padding:0;
+            }
+            .heder{
+                width:100%;
+                margin:0;
+                padding:0;
+            }
+            .social{
+                width:100%;
+                margin:0;
+                padding:0;
+            }
+            .fa-bars{
+                width:100%;
+                margin-left:-230px;
+                margin-top: 10px;
+            }
+           
+         }
+        </style>
+        <!--@media only screen and (max-width:360px){
             body{
                 max-width:360px;
             }
@@ -263,7 +300,7 @@
             .front1 img{
                 width:300px;
                 height: 450px;
-                margin-left: -77px;
+                margin-left: -78px;
                 position: absolute;
             }
             .front1{
@@ -404,7 +441,7 @@
                 margin-top: -50px;
             }
          }
-        @media screen and (max-width:390px){
+         @media screen and (max-width:390px){
             body{
                 max-width:390px;
             }
@@ -555,16 +592,15 @@
                 margin-top: -50px;
             }
          }
-        @media screen and (max-width:1170px){
+         @media screen and (max-width:1169px){
             body{
-                max-width:1170px;
-                overflow-x:hidden;
+                max-width:1169px;
             }
             body::-webkit-scrollbar{
                 display: none;
             }
             .front1 img{
-                width:1500px;
+                width:1100px;
                 height: 450px;
                 margin-left: -253px;
                 position: absolute;
@@ -707,7 +743,7 @@
                 margin-top: -50px;
             }
          }
-    </style>
+    </style>-->
     <script>
         var a=document.getElementById("card1");
             document.getElementById('flip1').addEventListener('click',function(){
@@ -739,6 +775,5 @@
                 g.classList.toggle('flipped7');
             },false);
     </script>
-      <script href="index.js"></script>
 </body>
 </html>
