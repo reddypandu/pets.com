@@ -10,27 +10,86 @@
 </head>
 <body>
     <div class="header">
-      <img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px">
-      <i class="fa fa-bars"></i>
-    </div>
-    <center><div class="pages">
-        <div class="page1">
-            <div class="inner front" id="inner">
-                    <div class="page12" style="background: url(https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg);background-repeat: no-repeat;background-size: cover;">
-                        <h1 style="margin: 0">PET Clinics</h1>
-                        <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
-                        <button>Book now</button>
-                        <p>HYDERABAD</p>
-                        <h4>Kondapur | Madhapur</h4>
-                        <button id="back">flip1</button>
-                    </div>
-              </div>
-              <a href="https://api.whatsapp.com/send?phone=918008457750" class="my-float" target="blank"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316__340.png" class="float"></a>
-            <div class="back">
-                <p style="color: red;">back</p>
-             </div>
+        <img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px">
+        <i class="fa fa-bars"></i>
+      </div>
+    <center><section class="container1">
+        <div id="card1" class="card1">
+            <figure class="front1">
+                <img src="https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg" width="1000px" height="450px">
+                <h1 style="margin: 0">PET Clinics</h1>
+                 <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
+                 <button>Book now</button>
+                 <p>HYDERABAD</p>
+                 <h4>Kondapur | Madhapur</h4>
+            </figure>
+            <figure class="back1">
+                hiiiiiiii
+            </figure>
         </div>
-    </div>
+    </section>
+    <section id="option1">
+        <p>
+        <button id="flip1">About us</button>
+        </p>
+    </section>
+    <section class="container2">
+        <div id="card2" class="card2">
+            <figure class="front2">
+                <img src="https://www.shutterstock.com/image-photo/banner-two-smiling-dogs-happy-260nw-1847221756.jpg" width="1000px" height="450px">
+                <h1>ESSENTIALS DELIVERED</h1>
+                <p>Same Day - Free doorstep delivery</p>
+            </figure>
+            <figure class="back2">
+                hiiiiiiii
+            </figure>
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=918008457750" class="my-float" target="blank"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316__340.png" class="float"></a>
+    <a href="tel:918008457750"><img src="https://img.freepik.com/free-icon/phone_318-452619.jpg" class="call"></a>
+        <section id="option2">
+            <p>
+            <button id="flip2" class="flip2">Contact</button>
+            </p>
+        </section>
+        <section class="container3">
+            <div class="card3" id="card3">
+                <figure class="front3">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" width="1000px" height="450px">
+                    <h5 style="margin: 0">Coming Soon</h5>
+                    <h1>GROOMING</h1>
+                    <p>At your convenience on wheels at doorstep</p>
+                    <P>HYDERBAD</P>
+                </figure>
+                <figure class="back3">
+                    page3
+                </figure>
+            </div>
+        </section>
+        <section id="option3">
+            <p>
+            <button id="flip3" class="flip3">Services</button>
+            </p>
+        </section>
+        <section class="container4">
+            <div class="card4" id="card4">
+                <figure class="front4">
+                    <img src="https://media.istockphoto.com/id/1278558854/photo/portrait-of-a-blond-labrador-retriever-dog-looking-around-the-corner-of-an-yellow-empty-board.jpg?s=612x612&w=0&k=20&c=egmEDGpOl4zxfz6VZARi2D9hSaG2DJvKph3ic8idaxs=" width="1000px" height="450px">
+                    <h5 style="margin: 0">Coming Soon</h5>
+                    <h1>DOG WALKERS</h1>
+                    <p>Trained Walkers - at Doorstep</>
+                    <p>HYDERABAD</p>
+                </figure>
+                <figure class="back4">
+                      page4
+                </figure>
+            </div>
+        </section>
+        <section id="option4">
+            <p>
+            <button id="flip4" class="flip4">Services</button>
+            </p>
+        </section></center>
     <style>
         .float{
             position: fixed;
@@ -45,30 +104,152 @@
             box-shadow: 1px 1px 4px white;
             z-index: 100;
         }
-
-        /*.inner{
+        .call{
+            position: fixed;
+            width: 60px;
+            height:60px;
+            bottom:40px;
+            right:140px;
+            color:#FFF;
+            border-radius:20px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 1px 1px 4px white;
+            z-index: 100;
+        }
+        .front1 img,.front3 img,.front4 img{
+           position: absolute;
+           margin-left: -560px;
+        }
+        .front1 p ,.front1 h1,.front1 h4,.front1 button{
             position: relative;
+            font-size: 20px;
+        }
+        .front3 h5,.front3 h1,.front3 p{
+            position: relative;
+            font-size: 20px;
+        }
+        .front4 h5,.front4 h1,.front4 p{
+            position: relative;
+            font-size: 20px;
+        }
+        #option1 button,#option3 button,#option button{
+            position: absolute;
+            margin-top: -450px;
+            margin-left: 412px;
+        }
+        .container1,.container3,.container4{
+            width: 1000px;
+            height: 450px;
+            margin:0;
+            position: relative;
+            perspective: 800px;
+        }
+        #card1,#card3,#card4{
             width: 100%;
             height: 100%;
-            transition: transform 2s;
+            position: absolute;
             transform-style: preserve-3d;
+            transition: transform 1.5s;
         }
-        .page1:hover .inner{
-            transform: rotateX(180deg);
+         #card1 figure,#card3 figure,#card4 figure{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+         }
+         #card1 .back1,#card3 .back3,#card4 .back4{
+            background: blue;
+            transform: rotateY(180deg);
+         }
+         #card1.flipped1,#card3.flipped3,#card4.flipped4{
+            transform: rotateY(180deg);
+         }
+         .front2 img{
+           position: absolute;
+           margin-left: -560px;
         }
-        .front,.back{
-             position: absolute;
-             width: 100%;
-             height: 100%;
-             -webkit-backface-visibility: hidden;
-             backface-visibility: hidden;
+        .front2 p ,.front2 h1{
+            position: relative;
+            font-size: 20px;
         }
-        .back{
-            background-color: #2980b9;
-            color: white;
-            transform: rotateX(180deg);
-        }*/
+        #option2 button{
+            position: absolute;
+            margin-top: -450px;
+        }
+        .container2{
+            width: 1000px;
+            height: 450px;
+            position: relative;
+            perspective: 800px;
+        }
+        #card2{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+         #card2 figure{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+         }
+         #card2 .back2{
+            background: blue;
+            transform: rotateY(180deg);
+         }
+         #card2.flipped2{
+            transform: rotateY(180deg);
+         }
     </style>
+    <script>
+        var a=document.getElementById("card1");
+            document.getElementById('flip1').addEventListener('click',function(){
+                a.classList.toggle('flipped1');
+            },false);
+        
+            var b=document.getElementById("card2");
+            document.getElementById('flip2').addEventListener('click',function(){
+                b.classList.toggle('flipped2');
+            },false);
+            var c=document.getElementById("card3");
+            document.getElementById('flip3').addEventListener('click',function(){
+                c.classList.toggle('flipped3');
+            },false);
+            var d=document.getElementById("card4");
+            document.getElementById('flip4').addEventListener('click',function(){
+                d.classList.toggle('flipped4');
+            },false);
+    </script>
+    <script>
+    </script>
+    <!--<center><div class="pages">
+        <section class="container">
+            <div class="inner front" id="card">
+                    <figure class="front">
+                        <h1 style="margin: 0">PET Clinics</h1>
+                        <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
+                        <button>Book now</button>
+                        <p>HYDERABAD</p>
+                        <h4>Kondapur | Madhapur</h4>
+                    </figure>
+                    <figure class="back">
+                        <p>back</p>
+                    </figure>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=918008457750" class="my-float" target="blank"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316__340.png" class="float"></a>
+              <a href="tel:918008457750"><img src="https://img.freepik.com/free-icon/phone_318-452619.jpg" class="call"></a>
+        </section>
+            <section>
+                <p>
+                <button id="flip">click</button>
+                </p>
+            </section>
+    </div>
         <div class="page2">
             <div class="page22">
             <h1 style="margin: 0">ESSENTIALS DELIVERED</h1>
@@ -122,12 +303,6 @@
             </div>
         </div>
     </div></center>
-     <div class="social">
-        <p>Connet:</p>
-        <a href="tel:+918008457750"><i class="fa fa-phone"></i></a>
-        <a href="mailto:contact@snoot.in"><i class="fa fa-envelope"></i></a>
-     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0"></svg>-->
-    <script href="index.js"></script>
+    <script href="index.js"></script>-->
 </body>
 </html>
