@@ -17,10 +17,10 @@
         <div id="card1" class="card1">
             <figure class="front1">
                 <img src="https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg" width="1000px" height="450px">
-                <h1>PET Clinics</h1>
+                 <h1 class="pet"><span>PET</span> Clinics</h1>
                  <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
-                 <button>Book now</button>
-                 <p>HYDERABAD</p>
+                 <button class="book">Book now</button>
+                 <h4>HYDERABAD</h4>
                  <h4>Kondapur | Madhapur</h4>
             </figure>
             <figure class="back1">
@@ -191,9 +191,6 @@
         }
         .front1 p ,.front1 h1,.front1 h4,.front1 button{
             position: relative;
-            font-size: 20px;
-            margin-left: -550px;
-            margin-top:30px;
         }
         .front2 p,.front2 h1{
             position: relative;
@@ -233,8 +230,8 @@
         }
         #option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
             position: absolute;
-            margin-top: -450px;
-            margin-left: 412px;
+            margin-top: -48px;
+            margin-left: 515px;
         }
         .container1,.container2,.container3,.container4,.container5,.container6,.container7{
             width: 1000px;
@@ -272,7 +269,7 @@
             transform: rotateY(180deg);
          }
           
-          @media only screen and (max-width: 400px){
+          @media screen and (max-width: 400px){
             .container1,.container2,.container3,.container4,.container5,.container6,.container7{
                 width:100%;
                 margin:0;
@@ -384,7 +381,7 @@
             display: block;
          }
          }
-         @media screen and (min-width:401px) and (max-width:720px){
+         @media only screen and (min-width: 400px) and (max-width: 720px){
             .container1,.container2,.container3,.container4,.container5,.container6,.container7{
                 width:94.5%;
                 margin:0;
@@ -497,6 +494,124 @@
             width:auto;
             margin:0;
             display: block;
+         }
+         }
+         @media screen and (min-width:720px) and (max-width:1170px){
+            .container1,.container2,.container3,.container4,.container5,.container6,.container7{
+                width:85%;
+                margin:0;
+                padding: 0;
+            }
+            .front1 img,.front2 img,.front3 img,.front4 img,.front5 img{
+                width:100%;
+                margin-left:-534.5px;
+                padding:0;
+            }
+            body{
+                width:1170px;
+                padding:0;
+                margin:0;
+            }
+            #option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
+                width:8%;
+                margin-top:-45px;
+                margin-left:370px;
+                padding:1px;
+            }
+            .header{
+                width:90%;
+                margin-left:50px;
+                padding:0;
+            }
+            .social{
+                width:100%;
+                margin:0;
+                padding:0;
+            }
+            .fa-bars{
+                width:100%;
+                margin-left:-200px;
+                margin-top: 10px;
+            }
+            .front1 p ,.front1 h1,.front1 h4,.front1 button{
+                position: relative;
+                font-size: 22px;
+                width:auto;
+                margin-left:-620px;
+                padding:2px;
+           }
+            .front2 p,.front2 h1{
+                position: relative;
+                font-size: 22px;
+                width:auto;
+                margin-left:-600px;
+                margin-top:100px;
+            }.front3 h5,.front3 h1,.front3 p{
+            position: relative;
+            width:auto;
+            font-size: 20px;
+            margin:0;
+            margin-top:35px;
+            margin-left:-650px;
+            }
+            .front4 h5,.front4 h1,.front4 p{
+            position: relative;
+            width: auto;
+            font-size: 25px;
+            margin:0;
+            margin-top:50px;
+            margin-left:-400px;
+        }
+        .front5 h1,.front5 p{
+            position: relative;
+            font-size: 25px;
+            width:auto;
+            margin:0;
+           margin-left:-400px;
+           margin-top:50px;
+        }
+        .front6 img,.front7 img{
+            width:100%;
+            margin:0;
+            margin-left:-534px;
+            margin-top:-20px;
+        }
+        .front6 h1,.front6 p,.front6 h5{
+            position: relative;
+            font-size: 20px;
+            width:auto;
+            margin:0;
+            margin-left:-600px;
+            margin-top:35px;
+        }
+        .front7 h1,.front7 p,.front7 span{
+            position: relative;
+            font-size: 20px;
+            width:auto;
+            margin:0;
+            margin-left:350px;
+            margin-top:40px;
+            color:white;
+        }
+        .call,.float{
+            position:fixed;
+            width:auto;
+            margin:0;
+            bottom:50px;
+            margin-right:-120px; 
+        }
+        .header img{
+            width: auto;
+            margin:0;
+            margin-left:50px;
+            margin-top:5px;
+         }
+         .header i{
+            width:auto;
+            margin:0;
+            padding:-25px;
+            margin-left:460px;
+            margin-top:10px;
          }
          }
         </style>
