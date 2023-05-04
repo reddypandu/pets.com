@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Snoot.com</title>
 </head>
 <body>
-    <div class="header" style="overflow: auto;">
+    <div class="row">
+    <div class="header" style="overflow: hidden;">
         <img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" style="overflow: auto;"></i>
       </div>
     <center><section class="container1" style="overflow: hidden;">
         <div id="card1" class="card1">
             <figure class="front1">
                 <img src="https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg" width="1000px" height="450px">
-                <h1 style="margin: 0">PET Clinics</h1>
+                <h1>PET Clinics</h1>
                  <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
                  <button>Book now</button>
                  <p>HYDERABAD</p>
@@ -58,7 +59,7 @@
             <div class="card3" id="card3">
                 <figure class="front3">
                     <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" width="1000px" height="450px">
-                    <h5 style="margin: 0">Coming Soon</h5>
+                    <h5>Coming Soon</h5>
                     <h1>GROOMING</h1>
                     <p>At your convenience on wheels at doorstep</p>
                     <P>HYDERBAD</P>
@@ -77,9 +78,9 @@
             <div class="card4" id="card4">
                 <figure class="front4">
                     <img src="https://media.istockphoto.com/id/1278558854/photo/portrait-of-a-blond-labrador-retriever-dog-looking-around-the-corner-of-an-yellow-empty-board.jpg?s=612x612&w=0&k=20&c=egmEDGpOl4zxfz6VZARi2D9hSaG2DJvKph3ic8idaxs=" width="1000px" height="450px">
-                    <h5 style="margin: 0">Coming Soon</h5>
+                    <h5>Coming Soon</h5>
                     <h1>DOG WALKERS</h1>
-                    <p>Trained Walkers - at Doorstep</>
+                    <p>Trained Walkers - at Doorstep</p>
                     <p>HYDERABAD</p>
                 </figure>
                 <figure class="back4">
@@ -96,7 +97,7 @@
             <div class="card5" id="card5">
                 <figure class="front5">
                     <img src="https://img.freepik.com/free-photo/front-view-beautiful-dog-with-copy-space_23-2148786561.jpg" width="1000px" height="450px">
-                    <h1 style="margin: 0">ADOPTION</h1>
+                    <h1>ADOPTION</h1>
                     <p>We connect you to local shelters</p>
                     <p>HYDERABAD</p>
                     <p>BANGALORE</p>
@@ -115,7 +116,7 @@
             <div class="card6" id="card6">
                 <figure class="front6">
                     <img src="https://media.istockphoto.com/id/1310068143/video/lovely-small-golden-retriever-dog-reacting-to-noise-suspiciously-looking-around-while-sitting.jpg?s=640x640&k=20&c=eAtC2LF_b5qHhRR1jo0jfbwsPPUGjnKUY2ZI1D60ZUw=" width="1000px" height="450px">
-                    <h1 style="margin: 0">NEED SOMETHING ELSE?</h1>
+                    <h1>NEED SOMETHING ELSE?</h1>
                     <p>if it's not listed in our services we will figure it</p>
                     <h5>We will do it with 100% pleasure at 0 cost to you!</h5>
                     <p>HYDERABAD</p>
@@ -131,11 +132,11 @@
             <button id="flip6" class="flip6">Services</button>
             </p>
         </section>
-        <section class="container7" style="overflow: auto;">
+        <section class="container7" style="overflow: hidden;">
             <div class="card7" id="card7">
                 <figure class="front7">
                     <img src="https://images.pond5.com/dog-running-slow-motion-footage-086451703_iconl.jpeg" width="1000px" height="450px">
-                    <h1 style="margin: 0">STAY CONNECTED!</h1>
+                    <h1>STAY CONNECTED!</h1>
                     <p>We are exited to hear from you!</p>
                     <p>Whatsapp</p>
                     <span>+918899669977</span>
@@ -152,6 +153,7 @@
             <button id="flip7" class="flip7">Services</button>
             </p>
         </section>
+    </div>
     </center>
     <style>
         .float{
@@ -182,7 +184,7 @@
         }
         .front1 img,.front2 img,.front3 img,.front4 img,.front5 img,.front6 img,.front7 img{
            position: absolute;
-           margin-left: -543px;
+           margin-left: -540px;
            border-radius: 30px;
            border-style: solid;
            border-color:rgb(230, 63, 63);
@@ -191,36 +193,50 @@
         .front1 p ,.front1 h1,.front1 h4,.front1 button{
             position: relative;
             font-size: 20px;
+            margin-left: -550px;
+            margin-top:30px;
         }
-        .front2 p,.front h1{
+        .front2 p,.front2 h1{
             position: relative;
             font-size: 20px;
+            margin-left:-550px;
+            margin-top:30px;
         }
         .front3 h5,.front3 h1,.front3 p{
             position: relative;
             font-size: 20px;
+            margin-left:-550px;
+            margin-top:30px;
         }
         .front4 h5,.front4 h1,.front4 p{
             position: relative;
             font-size: 20px;
+            margin-left:-550px;
+            margin-top:30px;
         }
         .front5 h1,.front5 p{
             position: relative;
             font-size: 20px;
+            margin-left:-550px;
+            margin-top:30px;
         }
         .front6 h1,.front6 p,.front6 h5{
             position: relative;
             font-size: 20px;
+            margin-left:-550px;
+            margin-top:30px;
         }
         .front7 h1,.front7 p,.front7 span{
             position: relative;
             font-size: 20px;
+            margin-left:400px;
+            margin-top:30px;
         }
-        /*#option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
+        #option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
             position: absolute;
             margin-top: -450px;
             margin-left: 412px;
-        }*/
+        }
         .container1,.container2,.container3,.container4,.container5,.container6,.container7{
             width: 1000px;
             height: 450px;
@@ -229,6 +245,7 @@
             border-radius: 30px;
             border-style: solid;
             border-color:rgb(230, 63, 63);
+            margin-left: 150px;
         }
         #card1,#card2,#card3,#card4,#card5,#card6,#card7{
             width: 100%;
@@ -238,7 +255,6 @@
             transition: transform 1.8s;
         }
          #card1 figure,#card2 figure,#card3 figure,#card4 figure,#card5 figure,#card6 figure,#card7 figure{
-            display: block;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -250,44 +266,130 @@
             border-radius: 30px;
             border-style: solid;
             border-color:rgb(230, 63, 63);
-            margin-top: -4px;
-            margin-left: -5px;
+            margin-top: 0px;
+            margin-left: 0px;
          }
          #card1.flipped1,#card2.flipped2,#card3.flipped3,#card4.flipped4,#card5.flipped5,#card6.flipped6,#card7.flipped7{
-            transform: rotateY(-180deg);
+            transform: rotateY(180deg);
          }
-         @media only screen and (max-width: 360px){
+          
+          @media only screen and (max-width: 360px){
             .container1,.container2,.container3,.container4,.container5,.container6,.container7{
-                width:88%;
+                width:100%;
                 margin:0;
                 padding: 0;
+            }
+            .front1 img,.front2 img,.front3 img,.front4 img,.front5 img,.front6 img.front7 img{
+                width:100%;
+                margin-left:-218px;
+                padding:0;
             }
             body{
                 width:360px;
                 padding:0;
-                overflow-x: hidden;
             }
-            #option1,#option2,#option3,#option4,#option5,#option6,#option7{
-                width:100%;
-                margin:0;
-                padding:0;
+            #option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
+                width:20%;
+                margin-top:-45px;
+                margin-left:70px;
+                padding:1px;
             }
-            .heder{
-                width:100%;
-                margin:0;
+            .header{
+                width:70%;
+                margin-left:-100px;
                 padding:0;
             }
             .social{
-                width:100%;
+                width:auto;
                 margin:0;
                 padding:0;
             }
             .fa-bars{
-                width:100%;
-                margin-left:-260px;
+                width:80%;
+                margin-left:50%px;
                 margin-top: 10px;
             }
            
+         }
+         @media screen and (max-width:360px){
+            body{
+                background-color: white;
+            }
+            .front1 p ,.front1 h1,.front1 h4,.front1 button{
+                position: relative;
+                font-size: 15px;
+                width:auto;
+                margin-left: -70px;
+                padding:2px;
+           }
+            .front2 p,.front2 h1{
+                position: relative;
+                font-size: 15px;
+                width:auto;
+                margin-left:-50px;
+            }.front3 h5,.front3 h1,.front3 p{
+            position: relative;
+            width:auto;
+            font-size: 15px;
+            margin:0;
+            margin-top:30px;
+            margin-left:-60px;
+            }
+            .front4 h5,.front4 h1,.front4 p{
+            position: relative;
+            width: auto;
+            font-size: 15px;
+            margin:0;
+            margin-top:30px;
+            margin-left:-150px;
+        }
+        .front5 h1,.front5 p{
+            position: relative;
+            font-size: 20px;
+            width:auto;
+            margin:0;
+           margin-left:-170px;
+           margin-top:50px;
+        }
+        .front6 h1,.front6 p,.front6 h5{
+            position: relative;
+            font-size: 15px;
+            width:auto;
+            margin:0;
+            margin-left:-100px;
+            margin-top:20px;
+        }
+        .front7 h1,.front7 p,.front7 span{
+            position: relative;
+            font-size: 20px;
+            width:auto;
+            margin:0;
+            margin-top:20px;
+        }
+        .call,.float{
+            position:fixed;
+            width:auto;
+            margin:0;
+            bottom:50px;
+            margin-right:-200px;
+            
+        }
+        .header img{
+            width: auto;
+            margin:0;
+            margin-left:10px;
+            margin-top:10px;
+         }
+         .header i{
+            width:auto;
+            margin:0;
+            margin-left:150px;
+         }
+         .header{
+            width:auto;
+            margin:0;
+            display: block;
+         }
          }
         </style>
         <!--@media only screen and (max-width:360px){
