@@ -3,7 +3,7 @@
 }
 body{
     height: 100vh;
-    width: 1000px;
+    width: 1100px;
     z-index:100;
     overflow-x: hidden;
     background-color: bisque;
@@ -22,134 +22,52 @@ body{
 }
 .header i{
     margin-left:500px;
+    margin-top:15px;
 }
-
-/*.page1,.page2,.page3,.page4,.page5,.page6,.page7{
-    float: center;
-    margin-left:-30px;
+#option1 button,#option2 button,#option3 button,#option4 button,#option5 button,#option6 button,#option7 button{
+    padding:5px;
+    background-color:greenyellow;
+    border: 0;
+    border-radius: 3px;
+    color:black;
+    font-weight: bold;
 }
-.page1{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(199, 195, 195);
-    border-radius: 40px;
-    text-align: left;
-    background: url("https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-style:solid;
-    position: relative;
-    perspective: 800px;
-}
-.container{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(199, 195, 195);
-    border-radius: 40px;
-    text-align: left;
-    background: url("https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-style:solid;
-    position: relative;
-    perspective: 800px;
-}
-#card{
-    width: 100%;
-            height: 100%;
-            position: absolute;
-            transform-style: preserve-3d;
-            transition: transform 1s;
-}
-#card figure{
-    margin: 0;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
- }
- #card .front{
-      
- }
- #card .back{
-    background: blue;
-    transform: rotateY(180deg);
- }
- #card.flipped{
-    transform: rotateY(180deg);
- }
-/*.page12,.page22,.page32,.page42,.page52,.page62,.page72{
-    padding: 100px;
+.book{
+    padding:5px;
+    background-color:rgb(5, 219, 5);
     
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px black;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-left:-870px;
+    font-size: 25px;
+    margin-top:20px;
+    border-style: solid;
 }
-.page2{
-    width: 1160px;
-    height: 450px;
-    background-color: pink;
-    background: url("https://www.shutterstock.com/image-photo/banner-two-smiling-dogs-happy-260nw-1847221756.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
-}
-.page3{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(238, 235, 235);
-    background: url("https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
-}
-.page4{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(146, 142, 142);
-    background: url("https://media.istockphoto.com/id/1278558854/photo/portrait-of-a-blond-labrador-retriever-dog-looking-around-the-corner-of-an-yellow-empty-board.jpg?s=612x612&w=0&k=20&c=egmEDGpOl4zxfz6VZARi2D9hSaG2DJvKph3ic8idaxs=");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
-}
-.page5{
-    width: 1160px;
-    height: 450px;
+.book:hover{
     background-color: white;
-    background: url("https://img.freepik.com/free-photo/front-view-beautiful-dog-with-copy-space_23-2148786561.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
+    color:green;
 }
-.page6{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(243, 171, 62);
-    background: url("https://media.istockphoto.com/id/1310068143/video/lovely-small-golden-retriever-dog-reacting-to-noise-suspiciously-looking-around-while-sitting.jpg?s=640x640&k=20&c=eAtC2LF_b5qHhRR1jo0jfbwsPPUGjnKUY2ZI1D60ZUw=");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
+.pet{
+    margin-left:-800px;
+    font-size:35px;
+    color:rgb(206, 57, 57);
+    font-family: sans-serif;
 }
-.page7{
-    width: 1160px;
-    height: 450px;
-    background-color: rgb(240, 205, 11);
-    background: url("https://images.pond5.com/dog-running-slow-motion-footage-086451703_iconl.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    text-align: left;
-    border-style:solid;
+span{
+    font-size: 45px;
+    color:black;
 }
-.page72{
-    float: right;
-    color: white;
+.front1 p{
+    margin-left:-610px;
+    width:500px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top:10px;
+    opacity: 0.7;
+}
+.front1 h4{
+    margin-left:-850px;
+    margin-top:50px;
 }
