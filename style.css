@@ -17,10 +17,11 @@ body{
     margin-bottom: -15px;
 }
 .header img{
-    margin-left: 110px;
+    margin:0;
+    margin-left: 170px;
 }
 .header i{
-    margin-left:550px;
+    margin-left:500px;
 }
 
 /*.page1,.page2,.page3,.page4,.page5,.page6,.page7{
