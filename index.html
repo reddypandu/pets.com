@@ -8,23 +8,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Snoot.com</title>
 </head>
-<body>
+<body class="nav-open">
     <div class="header" style="overflow: hidden;">
-        <img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px">
-        <i class="fa fa-bars" style="overflow: auto;"></i>
+        <marquee scrollamount="15" hspace="150px"><img src="https://snoot.in/wp-content/uploads/2023/01/Web-logo.png" width="135px" height="45px"></marquee>
+        <i class="fa fa-bars" style="overflow: auto;" onclick="tags()"></i>
       </div>
+     <!---- <div class="tags" id="tags" style="display: none;">
+        <i class="fa fa-times" id="close"></i>
+        <a href="#back1"><h3>About us</h3></a>
+        <h3>Services</h3>
+        <h3>Contact</h3>
+        <h3>Medals</h3>
+        <h3>Address</h3>
+      </div>-->
+      <script>
+       function tags(){
+            var tag=document.getElementById("nav");
+            if(tag.style.display=="none")
+              tag.style.display="block";
+            else tag.style.display="none";
+        }
+        document.querySelector("close").addEventListener("click",()=>{
+            tags();
+        })
+        var close=document.getElementById("close");
+        var t=document.getElementById("tags");
+          close.addEventListener("click", ()=>{
+            t.style.display="none";
+          })
+      </script>
+      <style>
+       /* .tags{
+            position: fixed;
+            width:100px;
+            height:600px;
+            background-color: white;
+            padding:8px;
+            position: absolute;
+            margin-left:1160px;
+            margin-top:-40px;
+            transform: translateX(-100px);
+            transition: transform 1s;
+        }*/
+        .body .nav{
+            transform: translateX(0);
+        }
+        #nav{
+            width:150px;
+            height:500px;
+            position: fixed;
+            top:35px;
+            right:190px;
+            background-color: pink;
+            border-radius: 25px;
+        }
+        .nav-close{
+            background: none;
+            border:none;
+            display: flex;
+            align-items: center;
+            margin-left:auto;
+            cursor:pointer;
+            padding:15px 15px;
+            font-size: 20px;
+        }
+        .nav a{
+            text-decoration: none;
+        }
+        .nav-links-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-next{
+            font-size: 20px;
+        }
+      </style>
     <center><section class="container1" style="overflow: hidden;">
         <div id="card1" class="card1">
             <figure class="front1">
                 <img src="https://www.shutterstock.com/image-photo/close-adorable-labrador-retriever-dog-260nw-1654803799.jpg" width="1000px" height="450px">
                  <h1 class="pet"><span>PET</span> Clinics</h1>
                  <p>Get your pet the expert care they deserve with<br> our in-person or on-call consulations</p>
-                 <button class="book">Book now</button>
+                 <a href="#card7"><button class="book">Book now</button></a>
                  <h4>HYDERABAD</h4>
                  <h4>Kondapur | Madhapur</h4>
             </figure>
             <figure class="back1">
+                <div id="#back1">
                 hiiiiiiii
+                </div>
             </figure>
         </div>
     </section>
@@ -49,6 +121,19 @@
     <a href="https://api.whatsapp.com/send?phone=918008457750" class="my-float" target="blank"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316__340.png" class="float"></a>
     <a href="tel:918008457750"><img src="https://img.freepik.com/free-icon/phone_318-452619.jpg" class="call"></a>
     </div>
+    <nav class="nav" id="nav" style="display: none;">
+        <button type="button" class="nav-close">
+            <i class="fa fa-times" id="close" onclick="tags()"></i>
+        </button>
+        <div class="nav-links-container">
+        <a href="#" class="nav-link"><span class="nav-next">About us</span></a>
+        <a href="#" class="nav-link"><span class="nav-next">Services</span></a>
+        <a href="#" class="nav-link"><span class="nav-next">Contact</span></a>
+        <a href="#" class="nav-link"><span class="nav-next">Medals</span></a>
+        <a href="#" class="nav-link"><span class="nav-next">Address</span></a>
+        </div>
+      </nav>
+    
         <section id="option2">
             <p>
             <button id="flip2" class="flip2">Contact</button>
@@ -188,6 +273,10 @@
            border-style: solid;
            border-color:rgb(230, 63, 63);
            margin-top: -19px;
+           transition: width 3s;
+        }
+        .front1 img:hover,.front2 img:hover,.front3 img:hover,.front4 img:hover,.front5 img:hover,.front6 img:hover,.front7 img:hover{
+            width:1200px;
         }
         .front1 p ,.front1 h1,.front1 h4,.front1 button{
             position: relative;
@@ -242,7 +331,11 @@
             border-style: solid;
             border-color:rgb(230, 63, 63);
             margin-left: 150px;
+            -webkit-mask-image:linear-gradient(black 50%, transparent);
+            mask-image:linear-gradient(black 50%, transparent);
+            background-image: radial-gradient(circle,red,yellow,green); 
         }
+        
         #card1,#card2,#card3,#card4,#card5,#card6,#card7{
             width: 100%;
             height: 100%;
@@ -391,6 +484,7 @@
                 width:100%;
                 margin-left:-377px;
                 padding:0;
+                
             }
             body{
                 width:720px;
@@ -495,7 +589,12 @@
             margin:0;
             display: block;
          }
+         .tags{
+            width:auto;
+            margin-left:610px;
+            
          }
+        }
          @media screen and (min-width:720px) and (max-width:1170px){
             .container1,.container2,.container3,.container4,.container5,.container6,.container7{
                 width:85%;
